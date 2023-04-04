@@ -1,0 +1,94 @@
+#image-shower-main-window {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(15, 15, 15, 0.8);
+}
+
+#image-shower-view-area {
+  position: absolute;
+  background: no-repeat center center;
+  background-color: rgb(5, 5, 5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+#image-shower-view-area[data-fullscreen=open] {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: auto;
+}
+
+#image-shower-img-element {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+}
+#image-shower-img-element[data-zoommeable=not] {
+  cursor: default;
+}
+#image-shower-img-element[data-zoommeable=magnifiable] {
+  cursor: zoom-in;
+}
+#image-shower-img-element[data-zoommeable=diminishable] {
+  cursor: zoom-out;
+}
+
+#image-shower-controls {
+  width: 20%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+#image-shower-controls button {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(1, 4, 9, 0.6705882353);
+  cursor: pointer;
+}
+#image-shower-controls button:focus {
+  outline: none;
+}
+#image-shower-controls button:nth-child(1) {
+  margin-top: 10px;
+}
+
+#image-shower-controls[data-is-mobile] {
+  width: 99%;
+  top: auto;
+}
+#image-shower-controls[data-is-mobile] button {
+  display: inline-block;
+  width: 33%;
+  height: 200px;
+  margin: 0;
+  padding: 1px;
+  opacity: 0.7;
+  border-radius: 3px;
+}
+#image-shower-controls[data-is-mobile] button:active {
+  opacity: 1;
+  background-color: red;
+}
