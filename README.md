@@ -9,10 +9,12 @@
 ## Установка
 Расширение можно установить двумя способами - из магазина расширений или вручную, из файла.
 
-### Chrome Web Store 
--
+#### Chrome Web Store 
+[В магазин](https://chrome.google.com/webstore/detail/joyreactor-improved-image/nfbhnnnfokpfbhlfioalinmfaggjjoia)
+#### Edge Add-ons
+[В магазин](https://microsoftedge.microsoft.com/addons/detail/joyreactor-improved-ima/pcaliphjelgbknaaeoklinlmmkkpedcn)
 
-### Из файла
+#### Из файла
 - Скачать исходный код (зеленая кнопка Code -> Download Zip).
 - Распакуйте скачанный архив.
 - В браузере перейдите в раздел настроек расширений.
